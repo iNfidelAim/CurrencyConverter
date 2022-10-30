@@ -2,7 +2,7 @@ package com.money.currencyconverter.models;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-//соимость валюты в рублях, имя (String) будет ключом.
+//соимость валюты в рублях, имя (String) будет ключом..
 @Entity
 public class Currency {
     @Id
