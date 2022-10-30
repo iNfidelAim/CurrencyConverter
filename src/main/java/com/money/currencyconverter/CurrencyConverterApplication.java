@@ -1,5 +1,6 @@
 package com.money.currencyconverter;
 
+import com.money.currencyconverter.controllers.Currency;
 import com.money.currencyconverter.models.CurrencyRate;
 import com.money.currencyconverter.models.DataAPI;
 import com.money.currencyconverter.repositories.CurrencyRateRepository;
@@ -7,12 +8,8 @@ import com.money.currencyconverter.repositories.CurrencyRepository;
 import com.money.currencyconverter.services.APIService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;
-
-import java.util.Currency;
 
 @SpringBootApplication
 public class CurrencyConverterApplication {
@@ -27,7 +24,7 @@ public class CurrencyConverterApplication {
 		DataAPI data = APIService.parseRates();
 		return args -> {
 			repository.save(new Currency("1", "111", "RUB", 1, "Российский рубль"));
-			for (Currency c:data.getCurrencies())
+				for (Currency c: data.getCurrencies())
 				repository.save(c);
 			rateRepository.save(new CurrencyRate("1", null, "RUB", 1.0));
 			for (CurrencyRate cr:data.getCurrencyRates())
