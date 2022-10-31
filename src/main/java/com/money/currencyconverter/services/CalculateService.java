@@ -1,11 +1,11 @@
 package com.money.currencyconverter.services;
-import com.money.currencyconverter.controllers.Conversion;
+import com.money.currencyconverter.models.Conversion;
 import com.money.currencyconverter.models.CurrencyRate;
 import com.money.currencyconverter.models.DataAPI;
 import com.money.currencyconverter.repositories.CurrencyRateRepository;
 import com.money.currencyconverter.repositories.CurrencyRepository;
 import com.money.currencyconverter.repositories.HistoryRepository;
-import com.money.currencyconverter.controllers.Currency;
+import com.money.currencyconverter.models.Currency;
 import org.springframework.stereotype.Service;
 import java.time.LocalDate;
 import java.util.List;

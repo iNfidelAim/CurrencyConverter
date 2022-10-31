@@ -1,4 +1,4 @@
-package com.money.currencyconverter.controllers;
+package com.money.currencyconverter.models;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

@@ -1,5 +1,5 @@
 package com.money.currencyconverter.services;
-import com.money.currencyconverter.controllers.Currency;
+import com.money.currencyconverter.models.Currency;
 import com.money.currencyconverter.models.CurrencyRate;
 import com.money.currencyconverter.models.DataAPI;
 import org.slf4j.Logger;

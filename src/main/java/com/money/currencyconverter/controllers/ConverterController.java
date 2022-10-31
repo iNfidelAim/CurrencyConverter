@@ -1,12 +1,9 @@
 package com.money.currencyconverter.controllers;
 
-import com.money.currencyconverter.models.AjaxHistoryBody;
-import com.money.currencyconverter.models.AjaxResponseBody;
+import com.money.currencyconverter.models.*;
 import com.money.currencyconverter.services.CalculateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -36,7 +33,7 @@ public class ConverterController {
 
     @PostMapping("/history")
     public ResponseEntity<?>  getHistory(@RequestBody HistoryForm historyForm) {
-        System.out.println("History is here");
+        System.out.println("История");
         AjaxHistoryBody result = new AjaxHistoryBody();
         List<Conversion> conversions = calculateService.getHistory(historyForm.getFirstCurrency(), historyForm.getSecondCurrency(),
                 historyForm.getDate());

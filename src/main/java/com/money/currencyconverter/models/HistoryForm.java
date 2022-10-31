@@ -1,8 +1,11 @@
-package com.money.currencyconverter.controllers;
-public class ConvertForm {
+package com.money.currencyconverter.models;
+
+import java.time.LocalDate;
+
+public class HistoryForm {
     private String firstCurrency;
     private String secondCurrency;
-    private double amount;
+    private LocalDate date;
 
     public String getFirstCurrency() {
         return firstCurrency;
@@ -20,11 +23,11 @@ public class ConvertForm {
         this.secondCurrency = secondCurrency;
     }
 
-    public double getAmount() {
-        return amount;
+    public LocalDate getDate() {
+        return date;
     }
 
-    public void setAmount(double amount) {
-        this.amount = amount;
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 }

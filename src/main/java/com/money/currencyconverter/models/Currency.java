@@ -1,4 +1,4 @@
-package com.money.currencyconverter.controllers;
+package com.money.currencyconverter.models;
 
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;

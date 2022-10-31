@@ -1,7 +1,6 @@
 package com.money.currencyconverter.models;
 //import java.util.Currency;
 import java.util.List;
-import com.money.currencyconverter.controllers.Currency;
 
 public class DataAPI {
     private List<Currency> currencies;

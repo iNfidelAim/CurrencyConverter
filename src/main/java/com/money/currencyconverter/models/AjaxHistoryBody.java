@@ -1,8 +1,6 @@
 package com.money.currencyconverter.models;
 
 
-import com.money.currencyconverter.controllers.Conversion;
-
 import java.util.List;
 
 public class AjaxHistoryBody {
