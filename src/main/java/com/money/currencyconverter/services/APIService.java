@@ -55,7 +55,7 @@ public class APIService {
                 if (node.getNodeType() == Node.ELEMENT_NODE) {
                     Element elem = (Element) node;
                     String charCode = elem.getElementsByTagName("CharCode").item(0).getTextContent();
-                    Currency currency = new Currency(elem.getAttribute("ID"),
+                    Currency currency = new Currency                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                (elem.getAttribute("ID"),
                             elem.getElementsByTagName("NumCode").item(0).getTextContent(),
                             charCode,
                             Integer.parseInt(elem.getElementsByTagName("Nominal").item(0).getTextContent()),
