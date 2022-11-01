@@ -3,6 +3,7 @@ package com.money.currencyconverter.controllers;
 import com.money.currencyconverter.models.*;
 import com.money.currencyconverter.services.CalculateService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.graphql.data.GraphQlRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;

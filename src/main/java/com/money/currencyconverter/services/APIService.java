@@ -100,7 +100,7 @@ public class APIService {
                 //Считывание даты
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
                 date = LocalDate.parse((elem.getAttribute("Date")), formatter);
-                System.out.println("Актуальная дата xml:" + date);
+                System.out.println("Последняя дата обновления котировок:" + date);
                 return date;
             }
 
