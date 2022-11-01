@@ -3,12 +3,9 @@ package com.money.currencyconverter.controllers;
 import com.money.currencyconverter.models.*;
 import com.money.currencyconverter.services.CalculateService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.graphql.data.GraphQlRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-
-import java.util.List;
 
 @RestController
 public class ConverterController {
@@ -26,13 +23,13 @@ public class ConverterController {
     @GetMapping("/convert")
     public ModelAndView getData() {
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("converter");
+        mv.setViewName("login");
         Iterable <Currency> currencies = calculateService.getAllCurrencies();
         mv.addObject("currencies", currencies);
         return mv;
     }
 
-    @PostMapping("/history")
+    /*@PostMapping("/history")
     public ResponseEntity<?>  getHistory(@RequestBody HistoryForm historyForm) {
         System.out.println("История");
         AjaxHistoryBody result = new AjaxHistoryBody();
@@ -41,6 +38,6 @@ public class ConverterController {
         System.out.println(conversions);
         result.setConversions(conversions);
         return ResponseEntity.ok(result);
-    }
+    }*/
 
 }
