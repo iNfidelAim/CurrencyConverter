@@ -1,7 +1,8 @@
 # CurrencyConverter
 CurrencyConverter
 
-
+Тянет API с ЦБ РФ курсы валют и конвертирует. 
+Записывает историю конвертаций.
 
 Запуск из cmd командной mvnw spring-boot:run;
 Для создания jar файла команда  mvnw clean package для Windows;
